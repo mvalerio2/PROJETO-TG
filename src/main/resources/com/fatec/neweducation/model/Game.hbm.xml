@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25/08/2014 21:45:36 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.fatec.neweducation.model.Game" table="game" catalog="newEducation">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="date" type="java.util.Date">
+            <column name="date" />
+        </property>
+        <property name="fkPlayerSchoolGrade" type="java.lang.Integer">
+            <column name="fk_player_school_grade" />
+        </property>
+        <property name="fkQuestionGame" type="java.lang.Integer">
+            <column name="fk_question_game" />
+        </property>
+        <property name="isCorrectAnswer" type="java.lang.Boolean">
+            <column name="is_correct_answer" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25/08/2014 21:45:36 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.fatec.neweducation.model.User" table="user" catalog="newEducation">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="nameUser" type="string">
+            <column name="name_user" length="45" />
+        </property>
+        <property name="typeUser" type="java.lang.Integer">
+            <column name="type_user" />
+        </property>
+        <property name="loginUser" type="string">
+            <column name="login_user" length="45" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

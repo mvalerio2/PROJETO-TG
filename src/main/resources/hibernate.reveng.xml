@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="newEducation"/>
+  <table-filter match-name="answer"/>
+  <table-filter match-name="question"/>
+  <table-filter match-name="game"/>
+  <table-filter match-name="user"/>
+  <table-filter match-name="player_school_grade"/>
+  <table-filter match-name="school"/>
+  <table-filter match-name="player"/>
+  <table-filter match-name="standart"/>
+</hibernate-reverse-engineering>

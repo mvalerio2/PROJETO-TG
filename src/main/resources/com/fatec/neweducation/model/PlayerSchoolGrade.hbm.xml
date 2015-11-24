@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25/08/2014 21:45:36 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.fatec.neweducation.model.PlayerSchoolGrade" table="player_school_grade" catalog="newEducation">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="yearClasse" type="java.lang.Integer">
+            <column name="year_classe" />
+        </property>
+        <property name="classe" type="java.lang.Integer">
+            <column name="classe" />
+        </property>
+        <property name="fkPlayer" type="java.lang.Integer">
+            <column name="fk_player" />
+        </property>
+        <property name="fkSchool" type="java.lang.Integer">
+            <column name="fk_school" />
+        </property>
+    </class>
+</hibernate-mapping>

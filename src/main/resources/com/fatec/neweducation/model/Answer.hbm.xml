@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25/08/2014 21:45:36 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.fatec.neweducation.model.Answer" table="answer" catalog="newEducation">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="typeAnswer" type="string">
+            <column name="type_answer" length="100" />
+        </property>
+        <property name="response" type="string">
+            <column name="response" />
+        </property>
+        <property name="picture" type="string">
+            <column name="picture" />
+        </property>
+        <property name="audio" type="string">
+            <column name="audio" length="45" />
+        </property>
+        <property name="isCorrect" type="java.lang.Boolean">
+            <column name="is_correct" />
+        </property>
+        <property name="fkQuestion" type="java.lang.Integer">
+            <column name="fk_question" />
+        </property>
+    </class>
+</hibernate-mapping>
